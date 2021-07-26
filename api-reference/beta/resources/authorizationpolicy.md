@@ -21,6 +21,9 @@ Represents a policy that can control Azure Active Directory authorization settin
 |:-------------|:------------|:------------|
 | [Get authorizationPolicy](../api/authorizationpolicy-get.md) | [authorizationPolicy](authorizationpolicy.md) | Read the authorizationPolicy object. |
 | [Update authorizationPolicy](../api/authorizationpolicy-update.md) | None | Update the authorizationPolicy object. |
+| **Default user role overrieds** | | |
+| [List defaultUserRoleOverrides](../api/authorizationpolicy-list-defaultuserroleoverrides.md)|[defaultUserRoleOverride](../resources/defaultuserroleoverride.md) collection|Get the defaultUserRoleOverride resources from the defaultUserRoleOverrides navigation property.|
+| [Create defaultUserRoleOverride](../api/authorizationpolicy-post-defaultuserroleoverrides.md)|[defaultUserRoleOverride](../resources/defaultuserroleoverride.md)|Create a new defaultUserRoleOverride object.|
 
 ## Properties  
 | Property | Type | Description | 
@@ -49,7 +52,9 @@ Represents a policy that can control Azure Active Directory authorization settin
 
 ## Relationships
 
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|defaultUserRoleOverrides|[defaultUserRoleOverride](../resources/defaultuserroleoverride.md) collection|**TODO: Add Description**|
 
 ## JSON representation
 
@@ -77,6 +82,7 @@ The following is a JSON representation of the resource.
   "allowedToSignUpEmailBasedSubscriptions": true,
   "allowEmailVerifiedUsersToJoinOrganization": true,
   "allowInvitesFrom": "String",
-  "permissionGrantPolicyIdsAssignedToDefaultUserRole": "[String]"
+  "permissionGrantPolicyIdsAssignedToDefaultUserRole": "[String]",
+  "defaultUserRolePermissions": {"@odata.type": "microsoft.graph.defaultUserRolePermissions"}
 }
 ```

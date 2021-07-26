@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Resource type exposing navigation properties for the policies singleton.
 
 ## Methods
@@ -30,7 +32,7 @@ None
 | authorizationPolicy                       | [authorizationPolicy](authorizationpolicy.md) collection                                                  | The policy that controls Azure AD authorization settings.                                                                                                            |
 | claimsMappingPolicies                     | [claimsMappingPolicy](claimsmappingpolicy.md) collection                                                  | The claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application.                                   |
 | homeRealmDiscoveryPolicies                | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) collection                                        | The policy to control Azure AD authentication behavior for federated users.                                                                                          |
-| permissionGrantPolicies                   | [permissionGrantPolicy](permissiongrantpolicy.md) collection                                              | The policy that specifies the conditions under which consent can be granted.                                                                                         |
+| permissionGrantPolicies                   | [permissionGrantPolicy](permissiongrantpolicy.md) collection                                              | The policy that specifies the conditions under which permissions can be granted.                                                                                     |
 | tokenIssuancePolicies                     | [tokenIssuancePolicy](tokenissuancepolicy.md) collection                                                  | The policy that specifies the characteristics of SAML tokens issued by Azure AD.                                                                                     |
 | tokenLifetimePolicies                     | [tokenLifetimePolicy](tokenlifetimepolicy.md) collection                                                  | The policy that controls the lifetime of a JWT access token, an ID token, or a SAML 1.1/2.0 token issued by Azure AD.                                                |
 | featureRolloutPolicies                    | [featureRolloutPolicy](featurerolloutpolicy.md) collection                                                | The feature rollout policy associated with a directory object.                                                                                                       |
@@ -41,6 +43,7 @@ None
 | mobileAppManagementPolicies               | [mobilityManagementPolicy](mobilitymanagementpolicy.md) collection                                        | The policy that defines auto-enrollment configuration for a mobility management (MDM or MAM) application.                                                            |
 | roleManagementPolicies                    | [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) collection                     | Represents the role management policies.                                                                                                                             |
 | roleManagementPolicyAssignments           | [unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) collection | Represents the role management policy assignments.                                                                                                                   |
+| servicePrincipalCreationPolicies          | [servicePrincipalCreationPolicy](../resources/serviceprincipalcreationpolicy.md) collection               | The conditions under which the permission to create service principals is granted.                                                                                   |
 
 
 ## JSON representation
