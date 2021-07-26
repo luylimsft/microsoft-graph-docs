@@ -21,7 +21,7 @@ Represents a policy that can control Azure Active Directory authorization settin
 |:-------------|:------------|:------------|
 | [Get authorizationPolicy](../api/authorizationpolicy-get.md) | [authorizationPolicy](authorizationpolicy.md) | Read the authorizationPolicy object. |
 | [Update authorizationPolicy](../api/authorizationpolicy-update.md) | None | Update the authorizationPolicy object. |
-| **Default user role overrieds** | | |
+| **Default user role overrides** | | |
 | [List defaultUserRoleOverrides](../api/authorizationpolicy-list-defaultuserroleoverrides.md)|[defaultUserRoleOverride](../resources/defaultuserroleoverride.md) collection|Get the defaultUserRoleOverride resources from the defaultUserRoleOverrides navigation property.|
 | [Create defaultUserRoleOverride](../api/authorizationpolicy-post-defaultuserroleoverrides.md)|[defaultUserRoleOverride](../resources/defaultuserroleoverride.md)|Create a new defaultUserRoleOverride object.|
 
@@ -54,7 +54,7 @@ Represents a policy that can control Azure Active Directory authorization settin
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|defaultUserRoleOverrides|[defaultUserRoleOverride](../resources/defaultuserroleoverride.md) collection|**TODO: Add Description**|
+|defaultUserRoleOverrides|[defaultUserRoleOverride](../resources/defaultuserroleoverride.md) collection|Overriden role permissions for the default user directory role.|
 
 ## JSON representation
 
